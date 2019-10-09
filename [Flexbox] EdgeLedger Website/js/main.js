@@ -32,3 +32,4 @@ $('#navbar a, .btn').on('click', function(e){
   }
 });
 
+// $(document).ready(()=> $('#contact .map').css('overflow','none'));
