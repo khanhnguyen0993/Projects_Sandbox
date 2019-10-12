@@ -109,6 +109,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 1rem;
 }
 
+.card p {
+  text-align: justify;
+}
+
 .bg-primary {
   background: var(--primary-color);
   color: #fff;
