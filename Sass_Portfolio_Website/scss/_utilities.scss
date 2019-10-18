@@ -20,19 +20,19 @@
 .btn {
   &-main {
     @extend %btn-shared;
-    color: #333;
+    color: $dark-color;
     background-color: $main-color;
   }
 
   &-light {
     @extend %btn-shared;
-    color: #333;
+    color: $dark-color;
     background-color: $light-color;
   }
 
   &-dark {
     @extend %btn-shared;
-    color: #333;
+    color: $light-color;
     background-color: $dark-color;
   }
 }
