@@ -13,7 +13,7 @@
   <title>Custom Materialize Theme</title>
 </head>
 
-<body>
+<body id="home" class="scrollspy">
   <div class="navbar-fixed">
     <nav class="teal">
       <div class="container">
@@ -72,7 +72,7 @@
   </section>
 
   <!-- Section: Search -->
-  <section class="section section-search teal darken-1 white-text center">
+  <section id="search" class="section section-search teal darken-1 white-text center scrollspy">
     <div class="container">
       <div class="row">
         <div class="col s12">
@@ -115,7 +115,7 @@
   </section>
 
   <!-- Section: Popular -->
-  <section class="section section-popular">
+  <section id="popular" class="section section-popular scrollspy">
     <div class="container">
       <div class="row">
         <h4 class="center"><span class="teal-text">Popular</span> Places</h4>
@@ -190,7 +190,7 @@
     </section>
 
     <!-- Section: Galerry -->
-    <section class="section section-gallery">
+    <section id="gallery" class="section section-gallery scrollspy">
       <div class="container">
         <h4 class="center"><span class="teal-text">Photo</span> Gallery</h4>
         <div class="row">
@@ -240,6 +240,56 @@
       </div>
     </section>
 
+    <!-- Section: Contact -->
+    <section id="contact" class="section section-contact scrollspy">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card-panel teal white-text center">
+              <i class="material-icons medium">email</i>
+              <h5>Contact Us For Booking</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi praesentium corrupti in, nostrum, obcaecati minus accusamus similique excepturi eos illum.</p>
+            </div>
+            <ul class="collection with-header">
+              <li class="collection-header">
+                <h4>Location</h4>
+              </li>
+              <li class="collection-item">Travelville Agency</li>
+              <li class="collection-item">555 Beach rd, Suite 33</li>
+              <li class="collection-item">Miami FL, 55555</li>
+            </ul>
+          </div>
+          <div class="col s12 m6">
+            <div class="card-panel grey lighten-3">
+              <h5>Please fill out this form</h5>
+              <div class="input-field">
+                <input type="text" id="name" autocomplete="off">
+                <label for="name">Name</label>
+              </div>
+              <div class="input-field">
+                <input type="email" id="email" autocomplete="off">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field">
+                <input type="text" id="phone" autocomplete="off">
+                <label for="phone">Phone</label>
+              </div>
+              <div class="input-field">
+                <textarea class="materialize-textarea" id="message"></textarea>
+                <label for="message">Message</label>
+              </div>
+              <input type="submit" value="Submit" class="btn">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section teal darken-2 white-text center">
+      <p class="flow-text">Travelville &copy; 2019</p>
+    </footer>
+
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -269,6 +319,9 @@
           "The Bahamas" : null
         }
       });
+
+      // Init Scrollspy
+      $('.scrollspy').scrollSpy();
 
     });
     </script>
