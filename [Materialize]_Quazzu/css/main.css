@@ -8,6 +8,15 @@
   overflow: hidden;
 }
 
+.justify-text{
+  text-align: justify;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
 
 .main-header{
   background: url(../img/background.jpg);
@@ -33,5 +42,53 @@
   background-position: center;
   border-top: #333 5px solid;
   border-bottom: #333 5px solid;
-  min-height: 180px;
+  min-height: 160px;
+}
+
+.section-podcast {
+  position: relative;
+  background: url(../img/circuit.jpg);
+  background-size: cover;
+  background-position: center;
+  border-top: #333 5px solid;
+  border-bottom: #333 5px solid;
+  min-height: 160px;
+}
+
+.section-podcast a{
+  margin-top: 30px;
+}
+
+.section-podcast .primary-overlay{
+  background: rgba(112, 81, 176, 0.9);
+}
+
+
+.carousel-item p {
+  font-size: 20px !important;
+}
+
+/* SOLUTION PAGE */
+.main-header-inner{
+  background: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  color: #fff;
+}
+
+.main-header-inner .showcase{
+  padding-top: 50px;
+}
+
+.tabs .indicator {
+  background-color: #6a1b9a !important;
+}
+
+
+@media(max-width: 500px){
+  .section-developers,
+  .section-podcast {
+    min-height: 240px;
+  }
 }
